@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	transition: all .5s ease;
+	position: relative;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	transition: all .5s ease;
+}
+
+.start-view {
+	background: #5585ed;
+}
+
+.game-view {
+	background: #eddc55;
+}
+
+.slide-top {
+	transform: translateY(-100vh);
+}
+
+.slide-top-times-2 {
+	transform: translateY(-200vh);
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 4rem;
+	transition: all .5s ease;
+	cursor: pointer;
+	text-align: center;
+}
+
+.containers {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.fa-solid {
+	font-size: 4rem!important;
+	cursor: pointer;
+	padding: 1rem;
+	background: #eee;
+	border-radius: 15px;
+	box-shadow: 10px 10px 0 hsla(0, 100%, 0%, 0.3);
+	color: #111;
+	font-size: 1.4rem;
+}
+
+#error {
+	color: #f77;
+}
+
+.absolute {
+	padding: 1rem;
+	background: #eee;
+	border-radius: 10px;
+	box-shadow: 10px 10px 0 hsla(0, 100%, 0%, 0.3);
+	color: #111;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+
+.opacity {
+	opacity: 1;
+}
